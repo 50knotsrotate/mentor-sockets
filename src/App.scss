@@ -1,0 +1,56 @@
+.App-header {
+  background: red;
+  height: 80px;
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
+.App {
+  background: rgb(244, 244, 244);
+  min-height: calc(100vh - 80px);
+  > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    > div:first-child {
+      background: red;
+    }
+    .message-box {
+      position: fixed;
+      bottom: 0px;
+      padding: 20px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: red;
+      width: 100%;
+
+      input {
+        width: 200px;
+        height: 30px;
+        padding: 0;
+        border: none;
+      }
+      button {
+        height: 30px;
+        border: none;
+      }
+      label {
+        font-size: 26px;
+      }
+    }
+  }
+}
